@@ -1,0 +1,882 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Özgeçmiş Sayfası</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/all.min.css">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap-icons-1.10.3/bootstrap-icons.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+  <!-- FontAwesome JS-->
+  <script defer src="assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Theme CSS -->
+  <link id="theme-style" rel="stylesheet" href="assets/css/pillar-1.css">
+  <script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sol tarafta edit alanı -->
+      <div class="col-md-4 edit">
+        <div class="card shadow mb-3 header-card" id="card-header">
+          <div class="card-body">
+            <div class="clearfix">
+              <h1 class="text-center">ÖZGEÇMİŞİM</h1>
+            </div>
+            <img src="assets/img/resume-header3.png" class="card-img-bottom" alt="...">
+            <button class="btn btn-secondary shadow-lg float-end pdf-indir" style="font-size: large; width: 100px; height: 50px;" onclick="window.print()"><i
+                class="bi bi-cloud-arrow-down-fill"></i> İndir</button>
+          </div>
+        </div>
+        <!-- BAŞLIK BİLGİLERİ -->
+        <div class="card shadow mb-3" id="card-1">
+          <div class="card-header">
+            <h4><i class="bi bi-card-heading"></i> Kişisel Bilgiler</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-1-accordion">
+              <div class="accordion-item" id="card-1-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-1-collapse-1" aria-expanded="true" aria-controls="card-1-collapse-1">Kişisel
+                    Bilgiler
+                  </button>
+                </h2>
+                <div id="card-1-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-1-heading-1"
+                  data-bs-parent="#card-1-accordion">
+                  <div class="accordion-body">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="isim" name="isim" placeholder="Ad Soyad"
+                        maxlength="50">
+                    </div>
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="unvan" name="unvan"
+                        placeholder="Ünvan: (örn: Web Developer)" maxlength="50">
+                    </div>
+
+                    <div class="mb-3">
+                      <input type="tel" class="form-control" id="telefon" name="telefon" minlength="5" maxlength="15"
+                        placeholder="Telefon (örn: 05xx xxx xxxx)">
+                    </div>
+
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="email" name="email"
+                        placeholder="Eposta (örn: example@gmail.com)">
+                    </div>
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="dogum-yeri" name="dogum-yeri" minlength="2"
+                        maxlength="50" placeholder="Doğum Yeri (örn: Mardin)">
+                    </div>
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="medeni-hal" name="medeni-hal" minlength="2"
+                        maxlength="20" placeholder="Medeni Hali (örn: Evli)">
+                    </div>
+
+
+
+                    <div class="mb-3">
+                      <input type="file" class="form-control" id="resim-yukle" accept=".jpg,.jpeg,.png,.gif"
+                        name="resim-yukle">
+                    </div>
+
+                    <div class="mb-3">
+                      <select class="form-select" id="resim-select" name="resim-select">
+                        <option selected>Profil Resmi Seç..</option>
+                        <option value="resimler/man.jpg">Bay</option>
+                        <option value="resimler/woman.jpg">Bayan</option>
+                        <option value="resimler/madara.jpg">Madara</option>
+                        <option value="resimler/levi.jpg">Levi</option>
+                        <option value="resimler/naruto.jpg">Naruto</option>
+                        <option value="resimler/light.jpg">Yagami</option>
+                        <option value="resimler/icigo.jpg">İcigo</option>
+                        <option value="resimler/hinata.jpg">Hinata</option>
+                        <option value="resimler/esdeath.jpg">Esdeath</option>
+                        <option value="resimler/akame.jpg">Akame</option>
+                      </select>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-1-item-2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-1-collapse-2" aria-expanded="false" aria-controls="card-1-collapse-2">Hakkımda Bilgisi
+                  </button>
+                </h2>
+                <div id="card-1-collapse-2" class="accordion-collapse collapse" aria-labelledby="card-1-heading-2"
+                  data-bs-parent="#card-1-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <textarea type="textarea" class="form-control" id="hakkimda-1" name="hakkimda"
+                        placeholder="Hakkımda"></textarea>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- BAĞLANTILAR -->
+        <div class="card shadow mb-3" id="card-2">
+          <div class="card-header">
+            <h4><i class="bi bi-link"></i> Bağlantılar</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-2-accordion">
+              <div class="accordion-item" id="card-2-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-2-collapse-1" aria-expanded="true" aria-controls="card-2-collapse-1">
+                    Bağlantı 1
+                  </button>
+                </h2>
+                <div id="card-2-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-2-heading-1"
+                  data-bs-parent="#card-2-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="url-adres-1" name="url-adres"
+                        placeholder="Bağlantılar (örn: https://github.com/ahmetilboga2004)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-2-item-2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-card-2-item-2" aria-expanded="false"
+                    aria-controls="collapse-card-2-item-2">Bağlantılar 2
+                    <i class="bi bi-trash position-absolute" style="right: 60px;"></i></button>
+                </h2>
+                <div id="collapse-card-2-item-2" class="accordion-collapse collapse" data-bs-parent="#card-2-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="url-adres-2" name="url-adres"
+                        placeholder="Bağlantılar (örn: https://github.com/ahmetilboga2004)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-2-item-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-card-2-item-3" aria-expanded="false"
+                    aria-controls="collapse-card-2-item-3">Bağlantılar 3
+                    <i class="bi bi-trash position-absolute" style="right: 60px;"></i></button>
+                </h2>
+                <div id="collapse-card-2-item-3" class="accordion-collapse collapse" data-bs-parent="#card-2-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="url-adres-3" name="url-adres"
+                        placeholder="Bağlantılar (örn: https://github.com/ahmetilboga2004)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+
+
+        <!-- İŞ DENEYİMLERİ-->
+        <div class="card shadow mb-3" id="card-3">
+          <div class="card-header">
+            <h4><i class="bi bi-briefcase"></i> İş Deneyimleri</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-3-accordion">
+              <div class="accordion-item" id="card-3-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-3-collapse-1" aria-expanded="true" aria-controls="card-3-collapse-1">
+                    İş Deneyimi 1
+                  </button>
+                </h2>
+                <div id="card-3-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-3-heading-1"
+                  data-bs-parent="#card-3-accordion">
+                  <div class="accordion-body">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="isveren-1" minlength="2" maxlength="50" name="isveren"
+                        placeholder="İşveren (örn: ABC Group)">
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="is-unvan-1" name="is-unvan" minlength="2"
+                          maxlength="50" placeholder="İş Ünvanı (örn: Teknisyen)">
+                      </div>
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="is-sehir-1" name="is-sehir" minlength="2"
+                          maxlength="50" placeholder="İşyeri (örn: İstanbul)">
+                      </div>
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <select class="form-select" id="is-baslangic-1" name="is-baslangic">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+
+                      <div class="col-md">
+                        <select class="form-select" id="is-bitis-1" name="is-bitis">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                      <textarea type="textarea" class="form-control" id="is-aciklama-1" name="is-aciklama"
+                        placeholder="İç Açıklaması"></textarea>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+
+
+        <!-- EĞİTİM BİLGİLERİ -->
+        <div class="card shadow mb-3" id="card-4">
+          <div class="card-header">
+            <h4><i class="bi bi-book"></i> Eğitim Bilgileri</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-4-accordion">
+              <div class="accordion-item" id="card-4-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-4-collapse-1" aria-expanded="true" aria-controls="card-4-collapse-1">
+                    Eğitim Bilgisi 1
+                  </button>
+                </h2>
+                <div id="card-4-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-4-heading-1"
+                  data-bs-parent="#card-4-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="okul-1" minlength="5" maxlength="80" name="okul"
+                        placeholder="İstanbul Teknik Üniversitesi">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="bolum-1" minlength="2" maxlength="80" name="bolum"
+                        placeholder="Yazılım Mühendisliği">
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="derece-1" name="derece" minlength="2" maxlength="50"
+                          placeholder="Lisans">
+                      </div>
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="okul-sehir-1" minlength="2" maxlength="50"
+                          name="okul-sehir" placeholder="İstanbul">
+                      </div>
+                    </div>
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <select class="form-select" id="okul-baslangic-1" name="okul-baslangic">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+                      <div class="col-md">
+                        <select class="form-select" id="okul-bitis-1" name="okul-bitis">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <textarea type="textarea" class="form-control" id="egitim-aciklama-1" name="egitim_aciklama"
+                        placeholder="Eğitim Açıklaması"></textarea>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+
+
+        <!-- DİLLER -->
+        <div class="card shadow mb-3" id="card-5">
+          <div class="card-header">
+            <h4><i class="bi bi-globe"></i> Diller</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-5-accordion">
+              <div class="accordion-item" id="card-5-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-5-collapse-1" aria-expanded="true" aria-controls="card-5-collapse-1">
+                    Dil 1
+                  </button>
+                </h2>
+                <div id="card-5-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-5-heading-1"
+                  data-bs-parent="#card-5-accordion">
+                  <div class="accordion-body">
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="dil-1" name="dil" minlength="2" maxlength="40"
+                          placeholder="Dil: (örn: İngilizce)">
+                      </div>
+                      <div class="col-md">
+                        <select class="form-select" id="dil-seviye-1" name="dil-seviye">
+                          <option value="Başlangıç seviye">Başlangıç seviye</option>
+                          <option value="Temel seviye">Temel seviye</option>
+                          <option value="Orta seviye öncesi">Orta seviye öncesi</option>
+                          <option value="Orta seviye">Orta seviye</option>
+                          <option value="Orta seviyenin üstü">Orta seviyenin üstü</option>
+                          <option value="İleri seviye">İleri seviye</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-5-item-2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-5-collapse-2" aria-expanded="false" aria-controls="card-5-collapse-2">
+                    Dil 2
+                  </button>
+                </h2>
+                <div id="card-5-collapse-2" class="accordion-collapse collapse" aria-labelledby="card-5-heading-2"
+                  data-bs-parent="#card-5-accordion">
+                  <div class="accordion-body">
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="dil-2" name="dil" minlength="2" maxlength="40"
+                          placeholder="Dil: (örn: İngilizce)">
+                      </div>
+                      <div class="col-md">
+                        <select class="form-select" id="dil-seviye-2" name="dil-seviye">
+                          <option value="Başlangıç seviye">Başlangıç seviye</option>
+                          <option value="Temel seviye">Temel seviye</option>
+                          <option value="Orta seviye öncesi">Orta seviye öncesi</option>
+                          <option value="Orta seviye">Orta seviye</option>
+                          <option value="Orta seviyenin üstü">Orta seviyenin üstü</option>
+                          <option value="İleri seviye">İleri seviye</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-5-item-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-5-collapse-3" aria-expanded="false" aria-controls="card-5-collapse-3">
+                    Dil 3
+                  </button>
+                </h2>
+                <div id="card-5-collapse-3" class="accordion-collapse collapse" aria-labelledby="card-5-heading-3"
+                  data-bs-parent="#card-5-accordion">
+                  <div class="accordion-body">
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="dil-3" name="dil" minlength="2" maxlength="40"
+                          placeholder="Dil: (örn: İngilizce)">
+                      </div>
+                      <div class="col-md">
+                        <select class="form-select" id="dil-seviye-1" name="dil-seviye">
+                          <option value="Başlangıç seviye">Başlangıç seviye</option>
+                          <option value="Temel seviye">Temel seviye</option>
+                          <option value="Orta seviye öncesi">Orta seviye öncesi</option>
+                          <option value="Orta seviye">Orta seviye</option>
+                          <option value="Orta seviyenin üstü">Orta seviyenin üstü</option>
+                          <option value="İleri seviye">İleri seviye</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+
+
+        <!-- BECERİ / YETENEK BİLGİLERİ -->
+        <div class="card shadow mb-3" id="card-6">
+          <div class="card-header">
+            <h4><i class="bi bi-rocket"></i> Beceri Bilgileri</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-6-accordion">
+              <div class="accordion-item" id="card-6-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-6-collapse-1" aria-expanded="true" aria-controls="card-6-collapse-1">
+                    Beceri Bilgisi 1
+                  </button>
+                </h2>
+                <div id="card-6-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-6-heading-1"
+                  data-bs-parent="#card-6-accordion">
+                  <div class="accordion-body">
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="beceri-1" name="beceri" minlength="2" maxlength="60"
+                          placeholder="Beceri (örn: Microsoft Word)">
+                      </div>
+                      <div class="col-md">
+                        <select class="form-select" id="beceri-seviye-1" name="beceri-seviye">
+                          <option value="Başlangıç seviye">Başlangıç seviye</option>
+                          <option value="Temel seviye">Temel seviye</option>
+                          <option value="Orta seviye öncesi">Orta seviye öncesi</option>
+                          <option value="Orta seviye">Orta seviye</option>
+                          <option value="Orta seviyenin üstü">Orta seviyenin üstü</option>
+                          <option value="İleri seviye">İleri seviye</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+
+
+        <!-- HOBİ BİLGİLERİ -->
+        <div class="card shadow mb-3" id="card-7">
+          <div class="card-header">
+            <h4><i class="bi bi-controller"></i> Hobi Bilgileri</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-7-accordion">
+              <div class="accordion-item" id="card-7-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-7-collapse-1" aria-expanded="true" aria-controls="card-7-collapse-1">
+                    Hobi 1
+                  </button>
+                </h2>
+                <div id="card-7-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-7-heading-1"
+                  data-bs-parent="#card-7-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="hobi-1" name="hobi" minlength="2" maxlength="100"
+                        placeholder="Hobi (örn: Spor Yapmak)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-7-item-2">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-7-collapse-2" aria-expanded="false" aria-controls="card-7-collapse-2">
+                    Hobi 2
+                  </button>
+                </h2>
+                <div id="card-7-collapse-2" class="accordion-collapse collapse" aria-labelledby="card-7-heading-2"
+                  data-bs-parent="#card-7-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="hobi-2" name="hobi" minlength="2" maxlength="100"
+                        placeholder="Hobi (örn: Spor Yapmak)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" id="card-7-item-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-7-collapse-3" aria-expanded="false" aria-controls="card-7-collapse-3">
+                    Hobi 3
+                  </button>
+                </h2>
+                <div id="card-7-collapse-3" class="accordion-collapse collapse" aria-labelledby="card-7-heading-3"
+                  data-bs-parent="#card-7-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="hobi-3" name="hobi" minlength="2" maxlength="100"
+                        placeholder="Hobi (örn: Spor Yapmak)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+
+
+        <!-- REFERANS BİLGİLERİ -->
+        <div class="card shadow mb-3" id="card-8">
+          <div class="card-header">
+            <h4><i class="bi bi-list-check"></i> Referans Bilgileri</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-8-accordion">
+              <div class="accordion-item" id="card-8-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-8-collapse-1" aria-expanded="true" aria-controls="card-8-collapse-1">
+                    Referans Bilgisi 1
+                  </button>
+                </h2>
+                <div id="card-8-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-8-heading-1"
+                  data-bs-parent="#card-8-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="ref-sirket-adi-1" name="ref-sirket-adi" minlength="2"
+                        maxlength="80" placeholder="Şirket Adı: (örn:Google)">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="ref-kisi-1" minlength="2" maxlength="80"
+                        name="ref-kisi" placeholder="Ad Soyad">
+                    </div>
+                    <div class="mb-3">
+                      <input type="tel" class="form-control" name="ref-tel" id="ref-tel-1" placeholder="Telefon">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Sağ tarafta özgeçmiş alanı -->
+      <div class="col-md-8 cv">
+        <article class="resume-wrapper text-center position-relative">
+          <div class="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
+            <header class="resume-header pt-4 pt-md-0 card-1">
+              <div class="row" id="kisisel-bilgiler-item-1">
+                <div class="col-block col-md-auto resume-picture-holder text-center text-md-start">
+                  <img class="picture" id="resim-1" src="assets/img/profile.jpg" alt="">
+                </div><!--//col-->
+                <div class="col">
+                  <div class="row p-4 justify-content-center justify-content-md-between">
+                    <div class="primary-info col-auto">
+                      <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase" id="isim-1">Steve Doe</h1>
+                      <div class="title mb-3" id="unvan-1">Full Stack Developer</div>
+                      <ul class="list-unstyled">
+                        <li class="mb-2 email-adress"><a class="text-link" href="#" id="email-1"><i
+                              class="far fa-envelope fa-fw me-2"
+                              data-fa-transform="grow-3"></i>Steve.Doe@website.com</a></li>
+
+                        <li class="mb-2 phone"><a class="text-link" href="#" id="telefon-1"><i
+                              class="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>0123 456 78900</a>
+                        </li>
+
+                        <li class="mb-2 place_of_birth"><a class="text-link" href="#" id="dogum-yeri-1"><i
+                              class="fas fa-location-dot fa-fw me-2" data-fa-transform="grow-6"></i>Mardin</a></li>
+
+                        <li class="mb-2 marital_status"><a class="text-link" href="#" id="medeni-hal-1"><i
+                              class="fas fa-home fa-fw me-2" data-fa-transform="grow-6"></i>Bekar</a></li>
+                      </ul>
+                    </div><!--//primary-info-->
+                    <div class="secondary-info col-auto mt-2">
+                      <ul class="resume-social list-unstyled card-2">
+                        <li class="mb-3 li-linkedin" id="baglantilar-item-1"><a class="text-link" href="#"
+                            id="baglantilar-url-adres-1"><span class="fa-container text-center me-2"><i
+                                class="fab fa-linkedin-in fa-fw"></i></span>linkedin.com/in/stevedoe</a></li>
+                        <li class="mb-3 li-github" id="baglantilar-item-2"><a class="text-link" href="#"
+                            id="baglantilar-url-adres-2"><span class="fa-container text-center me-2"><i
+                                class="fab fa-github-alt fa-fw"></i></span>github.com/username</a></li>
+                        <li class="mb-3 li-website" id="baglantilar-item-3"><a class="text-link" href="#"
+                            id="baglantilar-url-adres-3"><span class="fa-container text-center me-2"><i
+                                class="fas fa-globe"></i></span>yourwebsite.com</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="resume-body p-5">
+              <section class="resume-section summary-section mb-5 card-1">
+                <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Hakkımda</h2>
+                <div class="resume-section-content" id="kisisel-bilgiler-item-2">
+                  <p class="mb-0" id="kisisel-bilgiler-hakkimda-1">Summarise your career here. You can make a PDF version of your resume using
+                    our free Sketch template here</a>.
+                    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor
+                    sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                    justo, fringilla vel, aliquet nec, vulputate eget. Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit.</p>
+                </div>
+              </section><!--//summary-section-->
+              <div class="row">
+                <div class="col-lg-9">
+                  <section class="resume-section experience-section mb-5">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">İş Deneyimleri</h2>
+                    <div class="resume-section-content">
+                      <div class="resume-timeline position-relative card-3">
+                        <article class="resume-timeline-item position-relative pb-5" id="is-deneyimi-item-1">
+
+                          <div class="resume-timeline-item-header mb-2">
+                            <div class="d-flex flex-column flex-md-row">
+                              <h3 class="resume-position-title font-weight-bold mb-1" id="deneyim-is-unvan-1">Lead
+                                Developer</h3>
+                              <div class="resume-company-name ms-auto"><span id="deneyim-isveren-1"> Startup Hub</span> - <span id="deneyim-is-sehir-1">İstanbul</span></div>
+                            </div>
+                            <div class="resume-position-time"><span id="deneyim-is-baslangic-1">2020</span> - <span
+                                id="deneyim-is-bitis-1">Devam Ediyor</span></div>
+                          </div>
+                          <div class="resume-timeline-item-desc">
+                            <p id="deneyim-is-aciklama-1">Role description goes here ipsum dolor sit amet, consectetuer
+                              adipiscing elit. Aenean
+                              commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                              parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                              eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+                          </div>
+                        </article>
+
+                      </div>
+                    </div>
+                  </section><!--//experience-section-->
+
+                  <section class="resume-section experience-section mb-5 card-4">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Eğitim Bilgileri</h2>
+                    <div class="resume-section-content">
+                      <div class="resume-timeline position-relative">
+                        <article class="resume-timeline-item position-relative pb-5" id="egitim-item-1">
+
+                          <div class="resume-timeline-item-header mb-2">
+                            <div class="d-flex flex-column flex-md-row">
+                              <h3 class="resume-position-title font-weight-bold mb-1" id="egitim-okul-1">Mardin Artuklu
+                                Üniversitesi</h3>&nbsp;/&nbsp;<span id="egitim-bolum-1">Bilgisayar Programcılığı</span>
+                              <div class="resume-company-name ms-auto">
+                                <span id="egitim-derece-1">Lisans</span> - <span id="egitim-okul-sehir-1">Mardin</span> 
+                              </div>
+                            </div>
+                            <div class="resume-position-time" id="egitim-tarih-1"><span
+                                id="egitim-okul-baslangic-1">2021</span> - <span id="egitim-okul-bitis-1">2025</span>
+                            </div>
+                          </div>
+                          <div class="resume-timeline-item-desc">
+                            <p id="egitim-egitim-aciklama-1">Role description goes here ipsum dolor sit amet,
+                              consectetuer adipiscing elit. Aenean
+                              commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                              parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                              eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
+                          </div>
+
+                        </article>
+
+
+
+                      </div>
+                    </div>
+                  </section><!--//experience-section-->
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <div class="col-lg-3">
+                  <section class="resume-section skills-section mb-5 card-6">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Beceriler &amp;
+                      Yetenekler</h2>
+                    <div class="resume-section-content">
+                      <div class="resume-skill-item">
+
+                        <ul class="list-unstyled mb-4">
+                          <li class="mb-2" id="beceri-bilgileri-item-1">
+                            <div class="resume-skill-name" id="beceriler-beceri-1">Angular</div>
+                            <div class="progress resume-progress">
+                              <div class="progress-bar theme-progress-bar-dark" id="beceri-seviye-1" role="progressbar"
+                                style="width: 98%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                          </li>
+                          <li class="mb-2" id="beceri-bilgileri-item-2">
+                            <div class="resume-skill-name" id="beceriler-beceri-2">React</div>
+                            <div class="progress resume-progress">
+                              <div class="progress-bar theme-progress-bar-dark" id="beceriler-beceri-seviye-2"
+                                role="progressbar" style="width: 94%" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </li>
+                          <li class="mb-2" id="beceri-bilgileri-item-3">
+                            <div class="resume-skill-name" id="beceriler-beceri-3">JavaScript</div>
+                            <div class="progress resume-progress">
+                              <div class="progress-bar theme-progress-bar-dark" id="beceriler-beceri-seviye-3"
+                                role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </li>
+
+                          <li class="mb-2" id="beceri-bilgileri-item-4">
+                            <div class="resume-skill-name" id="beceriler-beceri-4">Node.js</div>
+                            <div class="progress resume-progress">
+                              <div class="progress-bar theme-progress-bar-dark" id="beceriler-beceri-seviye-4"
+                                role="progressbar" style="width: 92%" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </li>
+                          <li class="mb-2" id="beceri-bilgileri-item-5">
+                            <div class="resume-skill-name" id="beceriler-beceri-5">HTML/CSS/SASS/LESS</div>
+                            <div class="progress resume-progress">
+                              <div class="progress-bar theme-progress-bar-dark" id="beceriler-beceri-seviye-5"
+                                role="progressbar" style="width: 96%" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div><!--//resume-skill-item-->
+
+                    </div><!--resume-section-content-->
+                  </section><!--//skills-section-->
+
+                  <!-- <section class="resume-section reference-section mb-5 card-6">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Kurslar</h2>
+                    <div class="resume-section-content">
+                      <ul class="list-unstyled resume-awards-list">
+                        <li class="mb-2 ps-4 position-relative">
+                          <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+                          <div class="resume-award-name">Award Name Lorem</div>
+                          <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium
+                            quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
+                        </li>
+                        <li class="mb-0 ps-4 position-relative">
+                          <i class="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
+                          <div class="resume-award-name">Award Name Ipsum</div>
+                          <div class="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </section> -->
+
+
+
+                  <section class="resume-section language-section mb-5 card-5">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Diller</h2>
+                    <div class="resume-section-content">
+                      <ul class="list-unstyled resume-lang-list">
+                        <li class="mb-2" id="diller-item-1"><span class="resume-lang-name font-weight-bold"
+                            id="diller-dil-1">English</span> (<small class="text-muted font-weight-normal"
+                            id="diller-dil-seviye-1">Orta seviye</small>)</li>
+                        <li class="mb-2 align-middle" id="diller-item-2"><span class="resume-lang-name font-weight-bold"
+                            id="diller-dil-2">Türkçe</span>
+                          (<small class="text-muted font-weight-normal" id="diller-dil-seviye-2">İleri seviye</small>)
+                        </li>
+                        <li class="mb-2" id="diller-item-3"><span class="resume-lang-name font-weight-bold"
+                            id="diller-dil-3">Arapça</span> (<small class="text-muted font-weight-normal"
+                            id="diller-dil-seviye-3">Orta seviye öncesi</small>)</li>
+                      </ul>
+                    </div>
+                  </section><!--//language-section-->
+
+                  <section class="resume-section interests-section mb-5 card-7">
+                    <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Hobiler</h2>
+                    <div class="resume-section-content">
+                      <ul class="list-unstyled">
+                        <li class="mb-1"  id="hobiler-item-1"><span id="hobiler-hobi-1">Climbing</span></li>
+                        <li class="mb-1"  id="hobiler-item-2"><span id="hobiler-hobi-2">Snowboarding</span> </li>
+                        <li class="mb-1"  id="hobiler-item-3"><span id="hobiler-hobi-3">Cooking</span> </li>
+                      </ul>
+                    </div>
+                  </section><!--//interests-section-->
+
+                </div>
+              </div><!--//row-->
+            </div><!--//resume-body-->
+
+
+          </div>
+        </article>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/edit.js"></script>
+  <!-- Bootstrap 5 JavaScript dosyaları -->
+  <script src="assets/bootstrap/js/popper.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Pdf kütüphaneleri -->
+  <script src="assets/js/jspdf.debug.js"></script>
+  <script src="assets/js/html2canvas.min.js"></script>
+  <script src="assets/js/html2pdf.min.js"></script>
+  
+</body>
+
+</html>
