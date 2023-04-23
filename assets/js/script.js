@@ -43,9 +43,3 @@ bitisSelects.forEach((select) => {
 });
 
 
-
-ClassicEditor
-  .create(document.querySelector('#hakkimda'))
-  .catch(error => {
-    console.error(error);
-  });
