@@ -47,24 +47,6 @@ function cvElementListener(cvElement, elementCardId) {
             var itemElemId = itemElem.id;
             cvElements.forEach((cvElem) => {
                 if (cvElem.id.includes(itemElemId)) {
-                    console.log(cvElem.id);
-                    if (cvElem.id.includes("beceri-seviye")) {
-                        var seviye = cvElem.style.width;
-                        if (seviye == "25%") {
-                            console.log("SEVİYE DOĞRU");
-                            itemElem.value = "Başlangıç seviye";
-                        } else if (seviye == "50%") {
-                            itemElem.value = "Temel seviye";
-                        } else if (seviye == "60%") {
-                            itemElem.value = "Orta seviye öncesi";
-                        } else if (seviye == "70%") {
-                            itemElem.value = "Orta seviye";
-                        } else if (seviye == "80%") {
-                            itemElem.value = "Orta seviyenin üstü";
-                        } else if (seviye == "100%") {
-                            itemElem.value = "İleri seviye";
-                        };
-                    }
                     itemElem.value = cvElem.innerText;
                 };
             });
