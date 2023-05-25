@@ -105,7 +105,7 @@ cards.forEach((card) => {
             // var index = accordionItems.indexOf(accordionItem);
             var accordionItems = Array.from(card.querySelectorAll('.accordion-item'));
             // Eğer silinecek olan item son item değilse, sil
-            if (!(card.id === "card-1")) {
+            if (!(card.id === "card-1") && !(card.id === "card-9")) {
                 accordionItem.remove();
                 removeCvItem(accordionItem.id, card.id)
             } else {

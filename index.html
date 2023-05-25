@@ -35,7 +35,7 @@
                 class="bi bi-cloud-arrow-down-fill"></i> İndir</button>
           </div>
         </div>
-        <!-- BAŞLIK BİLGİLERİ -->
+        <!-- KİŞİSEL BİLGİLERİ -->
         <div class="card shadow mb-3" id="card-1">
           <div class="card-header">
             <h4><i class="bi bi-card-heading"></i> Kişisel Bilgiler</h4>
@@ -85,48 +85,47 @@
 
 
                     <div class="mb-3">
-                      <input type="file" class="form-control" id="resim-yukle" accept=".jpg,.jpeg,.png,.gif"
-                        name="resim-yukle">
-                    </div>
-
-                    <div class="mb-3">
-                      <select class="form-select" id="resim-select" name="resim-select">
-                        <option selected>Profil Resmi Seç..</option>
-                        <option value="resimler/man.jpg">Bay</option>
-                        <option value="resimler/woman.jpg">Bayan</option>
-                        <option value="resimler/madara.jpg">Madara</option>
-                        <option value="resimler/levi.jpg">Levi</option>
-                        <option value="resimler/naruto.jpg">Naruto</option>
-                        <option value="resimler/light.jpg">Yagami</option>
-                        <option value="resimler/icigo.jpg">İcigo</option>
-                        <option value="resimler/hinata.jpg">Hinata</option>
-                        <option value="resimler/esdeath.jpg">Esdeath</option>
-                        <option value="resimler/akame.jpg">Akame</option>
-                      </select>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item" id="card-1-item-2">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#card-1-collapse-2" aria-expanded="false" aria-controls="card-1-collapse-2">Hakkımda Bilgisi
-                  </button>
-                </h2>
-                <div id="card-1-collapse-2" class="accordion-collapse collapse" aria-labelledby="card-1-heading-2"
-                  data-bs-parent="#card-1-accordion">
-                  <div class="accordion-body">
-
-                    <div class="mb-3">
-                      <textarea type="textarea" class="form-control" id="hakkimda-1" name="hakkimda"
-                        placeholder="Hakkımda"></textarea>
+                      <input type="file" class="form-control" id="resim" accept=".jpg,.jpeg,.png"
+                        name="resim">
                     </div>
 
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="card shadow mb-3" id="card-9">
+          <div class="card-header">
+            <h4><i class="bi bi-rocket"></i>Biyografi / Hakkımda Yazısı</h4>
+          </div>
+          <div class="card-body">
+            <div class="accordion" id="card-9-accordion">
+              <div class="accordion-item" id="card-9-item-1">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-9-collapse-1" aria-expanded="true" aria-controls="card-9-collapse-1">
+                    Hakkımda Bilgisi 1
+                  </button>
+                </h2>
+                <div id="card-9-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-9-heading-1"
+                  data-bs-parent="#card-9-accordion">
+                  <div class="accordion-body">
+                    <div class="mb-3">
+                      <textarea type="textarea" class="form-control" id="hakkimda-1" name="hakkimda"
+                        placeholder="Hakkımda"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="card-footer">
+            <button type="button" style="width: 100%;" class="btn btn-secondary add-btn"><i class="bi bi-plus"></i>
+              Yeni</button>
           </div>
         </div>
 
@@ -781,11 +780,11 @@
               </div>
             </header>
             <div class="resume-body p-5">
-              <section class="resume-section summary-section mb-5 card-1">
+              <section class="resume-section summary-section mb-5 card-9">
                 <h2 class="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Hakkımda</h2>
-                <div class="resume-section-content" id="kisisel-bilgiler-item-2">
-                  <p class="mb-0" id="kisisel-bilgiler-hakkimda-1">Summarise your career here. You can make a PDF version of your resume using
-                    our free Sketch template here</a>.
+                <div class="resume-section-content" id="hakkimda-yazisi-item-1">
+                  <p class="mb-0" id="hakkimda-1">Summarise your career here. You can make a PDF version of your resume using
+                    our free Sketch template here.
                     Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient
                     montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor
                     sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
