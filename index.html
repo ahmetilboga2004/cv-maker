@@ -137,11 +137,30 @@
           </div>
           <div class="card-body">
             <div class="accordion" id="card-2-accordion">
+              <div class="accordion-item" id="card-2-item-0" style="display: none;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-2-collapse-0" aria-expanded="true" aria-controls="card-2-collapse-0">
+                    Bağlantılar 0
+                  </button>
+                </h2>
+                <div id="card-2-collapse-0" class="accordion-collapse collapse show" aria-labelledby="card-2-heading-0"
+                  data-bs-parent="#card-2-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="url-adres-0" name="url-adres"
+                        placeholder="Bağlantılar (örn: https://github.com/ahmetilboga2004)">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
               <div class="accordion-item" id="card-2-item-1">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#card-2-collapse-1" aria-expanded="true" aria-controls="card-2-collapse-1">
-                    Bağlantı 1
+                    Bağlantılar 1
                   </button>
                 </h2>
                 <div id="card-2-collapse-1" class="accordion-collapse collapse show" aria-labelledby="card-2-heading-1"
@@ -208,6 +227,55 @@
           </div>
           <div class="card-body">
             <div class="accordion" id="card-3-accordion">
+              <div class="accordion-item" id="card-3-item-0" style="display: none;">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-3-collapse-0" aria-expanded="true" aria-controls="card-3-collapse-0">
+                    İş Deneyimi 0
+                  </button>
+                </h2>
+                <div id="card-3-collapse-0" class="accordion-collapse collapse show" aria-labelledby="card-3-heading-0"
+                  data-bs-parent="#card-3-accordion">
+                  <div class="accordion-body">
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="isveren-0" minlength="2" maxlength="50" name="isveren"
+                        placeholder="İşveren (örn: ABC Group)">
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="is-unvan-0" name="is-unvan" minlength="2"
+                          maxlength="50" placeholder="İş Ünvanı (örn: Teknisyen)">
+                      </div>
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="is-sehir-0" name="is-sehir" minlength="2"
+                          maxlength="50" placeholder="İşyeri (örn: İstanbul)">
+                      </div>
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <select class="form-select" id="is-baslangic-0" name="is-baslangic">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+
+                      <div class="col-md">
+                        <select class="form-select" id="is-bitis-0" name="is-bitis">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                      <textarea type="textarea" class="form-control" id="is-aciklama-1" name="is-aciklama"
+                        placeholder="İç Açıklaması"></textarea>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
               <div class="accordion-item" id="card-3-item-1">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -273,6 +341,58 @@
           </div>
           <div class="card-body">
             <div class="accordion" id="card-4-accordion">
+              <div class="accordion-item" id="card-4-item-0">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#card-4-collapse-0" aria-expanded="true" aria-controls="card-4-collapse-0">
+                    Eğitim Bilgisi 1
+                  </button>
+                </h2>
+                <div id="card-4-collapse-0" class="accordion-collapse collapse show" aria-labelledby="card-4-heading-0"
+                  data-bs-parent="#card-4-accordion">
+                  <div class="accordion-body">
+
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="okul-0" minlength="5" maxlength="80" name="okul"
+                        placeholder="İstanbul Teknik Üniversitesi">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="bolum-0" minlength="2" maxlength="80" name="bolum"
+                        placeholder="Yazılım Mühendisliği">
+                    </div>
+
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="derece-0" name="derece" minlength="2" maxlength="50"
+                          placeholder="Lisans">
+                      </div>
+                      <div class="col-md">
+                        <input type="text" class="form-control" id="okul-sehir-0" minlength="2" maxlength="50"
+                          name="okul-sehir" placeholder="İstanbul">
+                      </div>
+                    </div>
+                    <div class="row g-2 mb-3">
+                      <div class="col-md">
+                        <select class="form-select" id="okul-baslangic-0" name="okul-baslangic">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+                      <div class="col-md">
+                        <select class="form-select" id="okul-bitis-0" name="okul-bitis">
+                          <!-- option in js -->
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <textarea type="textarea" class="form-control" id="egitim-aciklama-1" name="egitim_aciklama"
+                        placeholder="Eğitim Açıklaması"></textarea>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
               <div class="accordion-item" id="card-4-item-1">
                 <h2 class="accordion-header">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse"

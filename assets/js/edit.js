@@ -92,6 +92,14 @@ function removeCvItem(item_id, card_id) {
 
 
 
+// GİZLİ ACCORDİON-İTEM OLUŞTURMA KODLARI
+var kartlar = document.querySelectorAll(".card");
+kartlar.forEach((kart) => {
+    var sonItem
+})
+
+
+
 const cards = document.querySelectorAll(".card");
 cards.forEach((card) => {
 
@@ -119,9 +127,6 @@ cards.forEach((card) => {
             }
         });
     });
-
-
-
 
 
     const addBtn = card.querySelector(".add-btn");
