@@ -92,12 +92,6 @@ function removeCvItem(item_id, card_id) {
 
 
 
-// GİZLİ ACCORDİON-İTEM OLUŞTURMA KODLARI
-var kartlar = document.querySelectorAll(".card");
-kartlar.forEach((kart) => {
-    var sonItem
-})
-
 
 
 const cards = document.querySelectorAll(".card");
@@ -173,9 +167,7 @@ cards.forEach((card) => {
             </button>
             </h2>
             <div id="collapse-${newId}" class="accordion-collapse collapse" data-bs-parent="#${lastAccordion.id}">
-            <div class="accordion-body">
             ${tempElement.innerHTML}
-            </div>
             </div>`;
             accordion.appendChild(newAccordion);
 
