@@ -4,7 +4,7 @@
 ## :dart: Amaç
 - Bu uyuglamayı hazırlarken ki amacım, insanların para harcamadan hızlı bir şekilde cv hazırlayabilmelerini sağlamak.
 - İleride bu uyuglamayı daha ileri seviyeye taşımak.
-- JavaScript ile yapabileceğim şeylerin kapasitesini zorlamak.
+- JavaScript ile yapabileceğim şeylerin potansiyelini zorlamak.
 
 ## :pushpin: Yapılacaklar
 
